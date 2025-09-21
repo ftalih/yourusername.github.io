@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Farid Talih – Psychiatrist</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      min-height: 100vh;
+    }
+    .sidebar {
+      background: #f0f0f0;
+      padding: 2rem;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .sidebar h1 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      color: #222;
+    }
+    .sidebar p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .main {
+      padding: 2rem;
+    }
+    h2 {
+      color: #444;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3rem;
+      margin-top: 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 0.4rem 0;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-links a {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    /* PRINT STYLES */
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 11pt;
+        line-height: 1.4;
+      }
+      .container {
+        display: block;
+      }
+      .sidebar {
+        box-shadow: none;
+        background: #fff;
+        padding: 0;
+      }
+      .sidebar h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
+      }
+      .sidebar p {
+        margin: 0.1rem 0;
+      }
+      .contact-links h3 {
+        margin-top: 0.8rem;
+      }
+      .contact-links a {
+        color: #000;
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+      .main {
+        padding: 0;
+        margin-top: 1rem;
+      }
+      h2 {
+        border: none;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+      }
+      ul li {
+        padding: 0.2rem 0;
+      }
+      a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        box-shadow: none;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1>Dr. Farid Talih</h1>
+      <p><strong>Adult Psychiatrist</strong><br>
+         US Board Certified in Psychiatry, Sleep Disorders & Addiction Medicine</p>
+      <p>Based at the American University of Beirut.<br>
+         Available internationally via online tele-health.</p>
+      <div class="contact-links">
+        <h3>Contact</h3>
+        <a href="mailto:yourname@email.com">📧 Email</a>
+        <a href="https://www.linkedin.com" target="_blank">🔗 LinkedIn</a>
+        <a href="https://share.google/9HDOQGGJ1pTb8wBkM" target="_blank">🌐 Website</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <section>
+        <h2>About</h2>
+        <p>
+          I am a highly skilled and trained adult psychiatrist providing psychologically-minded,
+          innovative treatments. I combine expertise in traditional psychiatry with advanced
+          therapies, helping patients locally and worldwide.
+        </p>
+      </section>
+
+      <section>
+        <h2>Expertise</h2>
+        <ul>
+          <li>✔ Psychiatry (Adult Mental Health)</li>
+          <li>✔ Sleep Disorders</li>
+          <li>✔ Addiction Medicine</li>
+          <li>✔ Ketamine Therapy</li>
+          <li>✔ Transcranial Magnetic Stimulation (TMS)</li>
+          <li>✔ Advanced & Innovative Treatments</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
